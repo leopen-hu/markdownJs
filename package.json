@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "webpack"
+  },
   "dependencies": {
     "markdown": "^0.5.0"
   },
