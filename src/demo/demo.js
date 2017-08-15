@@ -1,10 +1,12 @@
-let mdContent = "# Hello *Markdown.js* !"
-htmlContent = markdown.toHTML(mdContent)
+import { markdown } from 'markdown'
+
+const mdContent = '# Hello *Markdown.js* !'
+const htmlContent = markdown.toHTML(mdContent)
 document.write(htmlContent)
 
 const preview = function () {
-    let inputContent = document.getElementById('mdInput').value
-    previewHTML = markdown.toHTML(inputContent)
-    window.console.log(previewHTML);
-    document.getElementById('previewer').innerHTML = previewHTML
+  const inputContent = document.getElementById('mdInput').value
+  const previewHTML = markdown.toHTML(inputContent)
+  window.console.log(previewHTML)
+  document.getElementById('previewer').innerHTML = previewHTML
 }
