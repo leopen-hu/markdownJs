@@ -1,5 +1,6 @@
 # npm ignore
 node_modules/
+npm-debug.log
 
 # editor ignore
 .vscode/
