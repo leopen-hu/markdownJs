@@ -4,7 +4,7 @@ const mdContent = '# Hello *Markdown.js* !'
 const htmlContent = markdown.toHTML(mdContent)
 document.write(htmlContent)
 
-const preview = function () {
+export function preview () {
   const inputContent = document.getElementById('mdInput').value
   const previewHTML = markdown.toHTML(inputContent)
   window.console.log(previewHTML)
